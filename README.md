@@ -1,8 +1,8 @@
 # 💼 Portofolio Pribadi - Zubair Abd
 
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Typed.js](https://img.shields.io/badge/Typed.js-2.0-FFB703?style=for-the-badge)
-![ScrollReveal](https://img.shields.io/badge/ScrollReveal.js-4.x-4B5563?style=for-the-badge)
+![Typed.js](https://img.shields.io/badge/Typed.js-FFB703?style=for-the-badge)
+![ScrollReveal](https://img.shields.io/badge/ScrollReveal.js-4B5563?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Online-success?style=for-the-badge)
 
 Website **portofolio pribadi** yang menampilkan profil, keahlian, dan proyek-proyek karya **M. Zubair Abdurrohman**.  
