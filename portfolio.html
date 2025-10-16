@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi - Zubair Abd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Kustomisasi untuk Typed.js cursor */
+        .typed-cursor {
+            font-size: 2.5rem;
+            color: #facc15; /* amber-400 */
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="bg-slate-900/80 backdrop-blur-md shadow-lg fixed w-full top-0 z-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex items-center justify-between h-20">
+                    <a href="#beranda" class="text-2xl font-bold text-white">ZA</a>
+                    
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex items-center space-x-10">
+                        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                        <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+                        <li><a href="#proyek" class="nav-link">Proyek</a></li>
+                        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                    </ul>
+
+                    <!-- Burger Menu Button -->
+                    <div class="md:hidden">
+                        <button id="burger-menu" class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-slate-800 shadow-lg">
+                <ul class="px-4 pt-2 pb-4 space-y-2">
+                    <li><a href="#beranda" class="mobile-link">Beranda</a></li>
+                    <li><a href="#tentang" class="mobile-link">Tentang Saya</a></li>
+                    <li><a href="#proyek" class="mobile-link">Proyek</a></li>
+                    <li><a href="#kontak" class="mobile-link">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="min-h-screen flex items-center bg-slate-900">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl text-slate-400">Halo, saya</h3>
+                    <h1 class="text-5xl md:text-6xl font-bold text-white my-3">Zubair Abd</h1>
+                    <h2 class="text-2xl md:text-4xl text-amber-400 font-semibold">
+                        <span id="typing-animation"></span>
+                    </h2>
+                    <p class="mt-6 max-w-lg mx-auto md:mx-0">Selamat datang di portofolio saya. Saya bersemangat dalam menciptakan solusi digital yang fungsional dan menarik secara visual. Mari lihat beberapa karya saya.</p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="#proyek" class="bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                            Lihat Proyek
+                        </a>
+                        <a href="#kontak" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto Zubair Abd" class="rounded-full shadow-2xl shadow-amber-500/10 w-80 h-80 md:w-96 md:h-96 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="tentang" class="py-24 bg-cover bg-center bg-fixed" style="background-image: linear-gradient(rgba(30, 41, 59, 0.95), rgba(30, 41, 59, 0.95)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4 reveal-bottom">Tentang Saya</h2>
+                <p class="max-w-3xl mx-auto mb-16 reveal-bottom">Saya adalah seorang web developer dengan hasrat mendalam untuk UI/UX. Saya menikmati proses mengubah ide-ide kompleks menjadi desain yang elegan dan intuitif. Dengan pengalaman di bidang front-end dan back-end, saya siap untuk berkolaborasi dalam proyek-proyek yang menantang.</p>
+                
+                <h3 class="text-3xl font-bold text-white mb-10 reveal-bottom">Keahlian Saya</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="bg-slate-700/50 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300 reveal-bottom">
+                        <h4 class="text-xl font-semibold text-white">Web Development</h4>
+                        <p class="text-sm mt-2 text-slate-400">HTML, CSS, JavaScript, React, Node.js</p>
+                    </div>
+                     <div class="bg-slate-700/50 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300 reveal-bottom">
+                        <h4 class="text-xl font-semibold text-white">UI/UX Design</h4>
+                        <p class="text-sm mt-2 text-slate-400">Figma, Sketch, Prototyping</p>
+                    </div>
+                     <div class="bg-slate-700/50 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300 reveal-bottom">
+                        <h4 class="text-xl font-semibold text-white">Database</h4>
+                        <p class="text-sm mt-2 text-slate-400">MySQL, MongoDB, Firebase</p>
+                    </div>
+                     <div class="bg-slate-700/50 backdrop-blur-sm p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition duration-300 reveal-bottom">
+                        <h4 class="text-xl font-semibold text-white">Tools</h4>
+                        <p class="text-sm mt-2 text-slate-400">Git, Webpack, Docker</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="proyek" class="py-24 bg-slate-900">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12 reveal-bottom">Proyek Terbaru</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden group reveal-bottom">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Proyek Dashboard Analitik" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Dashboard Analitik</h3>
+                            <p class="text-sm mb-4 text-slate-400">Sebuah platform visualisasi data interaktif yang dibangun menggunakan React dan D3.js.</p>
+                            <a href="#" class="text-amber-400 hover:underline">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden group reveal-bottom">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Proyek Website Agensi Kreatif" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Website Agensi Kreatif</h3>
+                            <p class="text-sm mb-4 text-slate-400">Desain website modern dengan animasi halus untuk sebuah agensi branding ternama.</p>
+                            <a href="#" class="text-amber-400 hover:underline">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden group reveal-bottom">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0abfe3d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Proyek Aplikasi E-commerce" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Aplikasi E-commerce</h3>
+                            <p class="text-sm mb-4 text-slate-400">Aplikasi mobile cross-platform untuk toko online yang fokus pada pengalaman pengguna.</p>
+                            <a href="#" class="text-amber-400 hover:underline">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontak" class="py-24 bg-slate-800">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4 reveal-bottom">Hubungi Saya</h2>
+                <p class="max-w-2xl mx-auto mb-8 reveal-bottom text-slate-400">Saya terbuka untuk peluang baru dan kolaborasi. Jangan ragu untuk menghubungi saya melalui email atau media sosial di bawah ini.</p>
+                <div class="reveal-bottom">
+                    <a href="mailto:emailanda@example.com" class="bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                        zubair.abd@email.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white text-center py-6">
+        <p>&copy; 2025 Zubair Abd. Dibuat dengan penuh semangat.</p>
+    </footer>
+
+    <!-- Typed.js & ScrollReveal.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Navigation Logic ---
+            const burgerMenu = document.getElementById('burger-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            burgerMenu.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) { // 80 is navbar height
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active', 'text-amber-400');
+                    const href = link.getAttribute('href').substring(1);
+                    if (href === current) {
+                        link.classList.add('active', 'text-amber-400');
+                    }
+                });
+            });
+
+            // --- Typed.js Animation ---
+            new Typed('#typing-animation', {
+                strings: ['Web Developer', 'UI/UX Enthusiast', 'Freelancer'],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            });
+
+            // --- ScrollReveal Animation ---
+            const sr = ScrollReveal({
+                distance: '60px',
+                duration: 2500,
+                delay: 400,
+                reset: false, // Animasi hanya berjalan sekali
+            });
+
+            sr.reveal('.reveal-bottom', { origin: 'bottom' });
+            sr.reveal('#beranda h3, #beranda h1, #beranda p, #beranda div', { origin: 'left', interval: 200 });
+            sr.reveal('#beranda img', { origin: 'right' });
+
+
+            // --- Custom Styles for Active Nav Link ---
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .nav-link { @apply text-slate-300 font-semibold transition duration-300; }
+                .nav-link:hover { @apply text-amber-400; }
+                .nav-link.active { @apply text-amber-400; }
+                .mobile-link { @apply block py-2 px-3 text-base font-medium text-slate-300 rounded-md hover:bg-slate-700 hover:text-amber-400; }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
+
