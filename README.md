@@ -8,7 +8,7 @@
 Website **portofolio pribadi** yang menampilkan profil, keahlian, dan proyek-proyek karya **M. Zubair Abdurrohman**.  
 Dibangun menggunakan **Tailwind CSS**, **Typed.js**, dan **ScrollReveal.js** dengan desain modern dan animasi interaktif.
 
-🔗 **Live Demo:** [https://zubairabd.github.io/](https://zubairabd.github.io/) *(atau sesuaikan link GitHub Pages repo ini)*
+🔗 **Live Demo:** [https://zubairabd.github.io/web-portfolio-pribadi/](https://zubairabd.github.io/web-portfolio-pribadi/) 
 
 ---
 
